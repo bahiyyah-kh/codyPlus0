@@ -1,3 +1,5 @@
+import { PartyPopper } from 'lucide-react'
+
 export default function CTASection({ onRegister, onLogin }) {
   return (
     <section
@@ -25,23 +27,13 @@ export default function CTASection({ onRegister, onLogin }) {
             className="inline-flex min-h-[70px] items-center justify-center gap-3 rounded-[30px] bg-[#FFB323] px-9 py-4 text-xl font-medium text-[#03045E] transition-colors hover:bg-[#FFC247] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white sm:min-w-[275px] sm:text-2xl"
           >
             <span>سجّل الآن — مجاناً!</span>
-            <svg
+            <PartyPopper
               aria-hidden="true"
               focusable="false"
-              width="22"
-              height="22"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="1.7"
-              strokeLinecap="round"
-              strokeLinejoin="round"
+              size={22}
+              strokeWidth={1.7}
               className="shrink-0"
-            >
-              <path d="m3 21 4-13 9 9-13 4Z" />
-              <path d="m6 12 6 6M11 8l2-3M16 12l3-1M15 7c-1-3 4-2 3-5M19 15c3-2 1 3 4 2" />
-              <path d="m7 4 .5.5M21 7l.5.5M12 2l.5.5" />
-            </svg>
+            />
           </button>
 
           <button

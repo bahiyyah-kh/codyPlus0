@@ -1,3 +1,5 @@
+import { User, Star } from 'lucide-react'
+
 const testimonials = [
   {
     name: ' كريم جلاد',
@@ -43,21 +45,12 @@ export default function TestimonialsSection() {
             >
               <div className="mb-5 flex items-center gap-4">
                 <div className="flex size-[50px] shrink-0 items-center justify-center rounded-full bg-[#CAF0F8] text-[#03045E]">
-                  <svg
+                  <User
                     aria-hidden="true"
                     focusable="false"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                  >
-                    <circle cx="12" cy="7" r="4" />
-                    <path d="M5 22v-3a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v3" />
-                  </svg>
+                    size={24}
+                    strokeWidth={2}
+                  />
                 </div>
 
                 <div className="min-w-0">
@@ -85,16 +78,13 @@ export default function TestimonialsSection() {
 
               <div aria-hidden="true" className="mt-auto flex gap-1 text-[#FFC400]">
                 {[0, 1, 2, 3, 4].map((star) => (
-                  <svg
+                  <Star
                     key={star}
                     focusable="false"
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
+                    size={16}
                     fill="currentColor"
-                  >
-                    <path d="m12 2 3.09 6.26L22 9.27l-5 4.87L18.18 21 12 17.76 5.82 21 7 14.14 2 9.27l6.91-1.01L12 2Z" />
-                  </svg>
+                    strokeWidth={0}
+                  />
                 ))}
               </div>
             </article>
